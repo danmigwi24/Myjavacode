@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="TextView"
+        android:layout_margin="2dp"
+        android:textColor="@android:color/black"
+        android:textSize="20dp" />
+
+
+    <EditText
+        android:id="@+id/txtPID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtInfo"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:hint="Product ID"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtPName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPID"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:hint="Product Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPName"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:hint="Price"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtPrice"
+        android:layout_margin="10dp"
+        android:background="#2196F3"
+        android:text="Create" />
+
+    <Button
+        android:id="@+id/btnRead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnCreate"
+        android:layout_alignStart="@+id/btnCreate"
+        android:layout_alignLeft="@+id/btnCreate"
+        android:background="#2196F3"
+        android:layout_marginTop="10dp"
+        android:text="Read" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnCreate"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:background="#2196F3"
+        android:layout_toEndOf="@+id/txtInfo"
+        android:layout_toRightOf="@+id/txtInfo"
+        android:text="Update" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnRead"
+        android:background="#2196F3"
+        android:layout_alignEnd="@+id/btnUpdate"
+        android:layout_alignRight="@+id/btnUpdate"
+        android:text="Delete" />
+</RelativeLayout>
